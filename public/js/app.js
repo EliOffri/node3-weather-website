@@ -1,8 +1,6 @@
 
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
-
 const msgWeather = document.querySelector('#message-w')
 const msgError = document.querySelector('#message-e')
 
@@ -23,3 +21,5 @@ weatherForm.addEventListener('submit', (e) => {
         })
     })
 })
+
+console.log('hi')
