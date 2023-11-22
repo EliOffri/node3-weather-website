@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" />
+
+</head>
+<body>
+        <div class="topic-page">{{>header}}</div>
+        <form class="form-container">
+        <input placeholder="Location">
+        <button>Search</button>
+        </form>
+        <div class="weather-container"> 
+     <p id="message-w" class="temperature">
+        {{!-- <div class="temperature">22°C</div>
+        <div class="location">City, Country</div>
+        <div class="condition">{{title}}</div> --}}
+        </p>
+
+        <p id="message-e">
+            {{!-- <div class="location">error message</div> --}}
+        </p>
+    </div>
+    <footer class="footerbar"> {{>footer}} </footer>
+        <script src="/js/app.js"></script>
+</body>
+</html>
