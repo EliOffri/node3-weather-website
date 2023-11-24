@@ -10,7 +10,11 @@ const forecast = (lat, long, callback) => {
             callback('Unable to find location', undefined)
         } else {
             const curWeather = JSON.parse(JSON.stringify(response))
-            callback(undefined, curWeather.body.current.temperature)
+            callback(undefined, {
+                temperature: curWeather.body.current.temperature,
+                time: curWeather.body.location.localtime,
+                desc: curWeather.body.current.weather_descriptions[0]
+            })
         }
     })
 }
